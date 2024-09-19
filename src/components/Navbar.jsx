@@ -52,7 +52,7 @@ const NavBar = () => {
 
       {/* SideBar menu pour petits ecran */}
       <div
-        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white bg-opacity-95 transition-all ${
+        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white bg-opacity-95 transition-all z-10 ${
           visible ? "w-full" : "w-0"
         }`}
       >
