@@ -4,10 +4,10 @@ import Carousel from "./Caroussel"; // Importer le carrousel
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formType, setFormType] = useState("inscription"); // Par défaut à l'inscription
 
-  const openModal = (type) => {
-    setFormType(type);
+
+  const openModal = () => {
+
     setIsModalOpen(true);
   };
 
@@ -39,15 +39,10 @@ const Hero = () => {
         >
           Contactez nous →
         </button>
-        {/* <button
-          className="mt-12 py-2 px-8 text-2xl rounded-full bg-orange-700 connect"
-          onClick={() => openModal("connexion")}
-        >
-          Se connecter
-        </button> */}
+        
       </div>
-
-      <Modal isOpen={isModalOpen} onClose={closeModal} formType={formType} />
+        
+      <Modal isOpen={isModalOpen} onClose={closeModal}  />
     </div>
   );
 };

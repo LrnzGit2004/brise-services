@@ -39,15 +39,22 @@ body {
   }
   .all {
     /* Classe pour gérer le responsive de all le design de la page maison*/
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width:930px) {
   .caroussel {
-    width: 798.97px;
+    width: 100% ;
+    height: auto;
   }
 }
+/* @media (min-width:930px) {
+  .caroussel {
+    width: 798.97px;
+  }
+} */
+
 
 /* Responsive du footer */
 @media (max-width: 815px) {

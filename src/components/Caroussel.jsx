@@ -21,7 +21,7 @@ const Carousel = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 7000); // Change d'image toutes les 3 secondes
+    }, 3000); // Change d'image toutes les 3 secondes
 
     return () => clearInterval(interval);
   }, []);
@@ -35,20 +35,19 @@ const Carousel = ({ images }) => {
   }, [currentIndex]);
 
   return (
-    <div className="relative caroussel">
-      <button onClick={prevSlide} className="absolute left-0 top-1/2 transform -translate-y-1/2 p-1 rounded">
-        <img src={assets.back_icon} alt="" width={50} className="cursor-pointer"/>
+    <div className="relative w-full max-w-2xl mx-auto">
+      <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded shadow">
+      <img src={assets.back_icon} alt="" width={50} className="cursor-pointer"/>
       </button>
       <div className={`transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-auto"
+          className="w-full h-auto rounded-lg" // Rendre l'image responsive
         />
       </div>
-      <button onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 rounded">
-      <img src={assets.back_icon} alt="" width={50} className="rotate-180 cursor-pointer"/>
-
+      <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded shadow">
+      <img src={assets.back_icon} alt="" width={50} className="cursor-pointer rotate-180"/>
       </button>
     </div>
   );
