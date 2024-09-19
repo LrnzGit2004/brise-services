@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "../components/Title";
-import { assets } from "../assets/assets";
 import Footer from "../components/Footer";
 import AboutFooter from "../components/AboutFooter";
 
@@ -8,7 +7,7 @@ const About = () => {
   return (
     <div>
       <Title text="A propos de nous" />
-      <p className="text-white text-xl m-20 pt-10 px-10 sm:px-4 text-about">
+      <p className="text-white px text-xl pt-10 px-4 sm:px-4 text-about md:m-20">
         <b>BRISES SERVICES</b> est une entreprise de conception numérique fondée
         à Bamenda dont le siège est à Douala,
         <br />

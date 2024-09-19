@@ -39,12 +39,16 @@ const NavBar = () => {
           <p>Contacts</p>
         </NavLink>
       </ul>
-
-      <img
+<div className="flex items-center text-white">
+   <p className="w-11 cursor-pointer sm:hidden">Menu</p>
+   <img
         onClick={() => setVisible(true)}
         src={assets.menu_icon}
         className="w-11 cursor-pointer sm:hidden"
       />
+      
+</div>
+     
 
       {/* SideBar menu pour petits ecran */}
       <div
