@@ -1,8 +1,6 @@
 Ce projet est un site qui présente brise services une entreprise de la place...
 
-Il s'agit d'une interface frontend donc pas de bases de données, d'appel API etc.
-
-L'objectif principal était d'améliorer mes capacités avec reactJs.
+Il s'agit d'un site vitrine fait en react et tailwind css et déployer avec les github pages
 
 Cordialement, Lorenzo Sobze.
 
