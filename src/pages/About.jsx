@@ -2,12 +2,13 @@ import React from "react";
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
 import Footer from "../components/Footer";
+import AboutFooter from "../components/AboutFooter";
 
 const About = () => {
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <div>
       <Title text="A propos de nous" />
-      <p className="text-white text-xl pt-10 px-10 sm:px-4 text-about">
+      <p className="text-white text-xl m-20 pt-10 px-10 sm:px-4 text-about">
         <b>BRISES SERVICES</b> est une entreprise de conception numérique fondée
         à Bamenda dont le siège est à Douala,
         <br />
@@ -61,24 +62,8 @@ const About = () => {
         l'équipe de branding des prestigieux BONTEH DIGITAL MEDIA
       </p>
 
-      <div className="mt-10 py-5 bg-gray-500">
-        <div className="partenaire w-full bg-orange-700 py-4">
-          <div className="titre text-2xl">Nos partenaires</div>
-          <div className="white bg-white w-full p-10 my-4 flex ">
-            <img
-              className="cursor-pointer"
-              src={assets.logo_délioce_naturels_new}
-              alt=""
-            />
-            <img
-              className="h-36 sylvia cursor-pointer"
-              src={assets.logo_new}
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <Footer />
+    <AboutFooter/>
+    <Footer />
     </div>
   );
 };

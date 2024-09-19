@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-between mt-40 mb-20 footer ">
+    <div className="flex items-center justify-between mt-40 mb-20 footer mx-20 ">
       <div className="flex mx-5 items-center reseaux pb-3">
         <img
           className="px-2 cursor-pointer w-[50px]"

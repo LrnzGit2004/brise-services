@@ -7,9 +7,10 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import NavBar from "./components/Navbar";
 
+
 const App = () => {
   return (
-    <div>
+    <div >
       <NavBar />
       <Routes>
         <Route path="/" element={<Maison />} />
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      
     </div>
   );
 };
