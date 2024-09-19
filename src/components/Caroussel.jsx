@@ -21,7 +21,7 @@ const Carousel = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000); // Change d'image toutes les 3 secondes
+    }, 9000); // Change d'image toutes les 9 secondes
 
     return () => clearInterval(interval);
   }, []);
@@ -29,7 +29,7 @@ const Carousel = ({ images }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTransitioning(false);
-    }, 500); // Durée de la transition
+    }, 100); // Durée de la transition
 
     return () => clearTimeout(timer);
   }, [currentIndex]);
